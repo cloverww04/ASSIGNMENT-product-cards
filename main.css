@@ -1,0 +1,110 @@
+.img {
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #d1d8ec;
+  -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+  box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 26px;
+  box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5),
+    inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+}
+
+#yellow {
+  border: 1px solid lightblue;
+  flex-basis: 33%;
+}
+#red {
+  border: 1px solid lightblue;
+  flex-basis: 33%;
+}
+#blue {
+  border: 1px solid lightblue;
+  flex-basis: 33%;
+}
+#orange {
+  border: 1px solid lightblue;
+  flex-basis: 33%;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+.wrap {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  border: 1px solid lightblue;
+  padding: 60px 60px 60px 60px;
+  justify-content: space-between;
+  row-gap: 50px;
+  
+}
+
+h2 {
+  border: 1px solid lightblue;
+  font-weight: bold;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.card h3 {
+  background-color: darkgray;
+  width: 100%;
+  color: yellow;
+}
+
+.card h4 {
+    padding-left: 10px;
+}
+
+.card h5 {
+    padding-left: 10px;
+}
+
+.card p1 {
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0;
+    bottom: 0%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.card#orange:hover .overlay{
+    opacity: 0.8;
+}
